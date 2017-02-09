@@ -1,31 +1,32 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Reflection;
 
 namespace BinarySearch
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Console.WriteLine(Rank(5, new[] {1,2,3,5,7}));
+            string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"TestW.txt");
+            string text = System.IO.File.ReadAllText(path);
+            Console.WriteLine(Rank(490636, text.Split(',').Select(int.Parse).ToArray()));
             Console.ReadKey(true);
         }
 
-        static int Rank(int key, int[] a)
+        private static int Rank(int key, int[] a)
         {
-            int lo = 0;
-            int hi = a.Length - 1;
+            var lo = 0;
+            var hi = a.Length - 1;
             while (lo <= hi)
             {
-                int mid = lo + (hi - lo) / 2;
+                var mid = lo + (hi - lo) / 2;
                 if (key < a[mid])
                 {
                     hi = mid - 1;
                 }
-                else if(key > a[mid])
+                else if (key > a[mid])
                 {
                     lo = mid + 1;
                 }
