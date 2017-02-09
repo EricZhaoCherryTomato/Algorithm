@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Alogrithm
+namespace GCD
 {
     internal class Program
     {
