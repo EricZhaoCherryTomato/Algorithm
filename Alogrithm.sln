@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearch", "BinarySearc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{57EE2D39-AAFE-476A-A21D-6BA99BF0DB85}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreeSumFast", "ThreeSumFast\ThreeSumFast.csproj", "{EE474F60-4267-483B-B277-C6BAA0909477}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreeSumTests.Unit", "ThreeSumTests.Unit\ThreeSumTests.Unit.csproj", "{EED6339C-C385-4ED5-95E1-CEB11C122E70}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{57EE2D39-AAFE-476A-A21D-6BA99BF0DB85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57EE2D39-AAFE-476A-A21D-6BA99BF0DB85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57EE2D39-AAFE-476A-A21D-6BA99BF0DB85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE474F60-4267-483B-B277-C6BAA0909477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE474F60-4267-483B-B277-C6BAA0909477}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE474F60-4267-483B-B277-C6BAA0909477}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE474F60-4267-483B-B277-C6BAA0909477}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EED6339C-C385-4ED5-95E1-CEB11C122E70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EED6339C-C385-4ED5-95E1-CEB11C122E70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EED6339C-C385-4ED5-95E1-CEB11C122E70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EED6339C-C385-4ED5-95E1-CEB11C122E70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
