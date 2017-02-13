@@ -56,4 +56,27 @@ namespace ThreeSumFast
             return cnt;
         }
     }
+
+    public class ThreeSum
+    {
+        public int Count(int[] numbers)
+        {
+            var cnt = 0;
+            var bs = new BinarySearch();
+            Array.Sort(numbers);
+            for (var i = 0; i < numbers.Length; i++)
+            {
+                for (var j = i+1; j < numbers.Length; j++)
+                {
+                    var k = bs.Rank(numbers, -(numbers[i] +numbers[j]));
+
+                    if (k > j)
+                    {
+                        cnt++;
+                    }
+                }
+            }
+            return cnt;
+        }
+    }
 }

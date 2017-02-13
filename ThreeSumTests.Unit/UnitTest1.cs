@@ -30,5 +30,18 @@ namespace ThreeSumTests.Unit
 
             Assert.AreEqual(1,sut);
         }
+
+        [Test]
+        public void ShouldReturnCountOfThreeSum()
+        {
+            int[] a = { -2, 4, 6, 8, 10, 12, 14, 16, 22, -2 };
+
+            ThreeSum ts = new ThreeSum();
+
+            var sut = ts.Count(a);
+
+            Assert.AreEqual(1, sut);
+        }
+        
     }
 }
